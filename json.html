@@ -27,7 +27,7 @@
   }
 </script> -->
 
-<script>
+<!-- <script>
   let obj = {
     login: login,
   };
@@ -35,4 +35,52 @@
     return "welcome to login module";
   }
   console.log(obj.login()); //welcome to login module
-</script>
+</script> -->
+
+<!-- <script>
+  let key1 = "hello_1";
+  let obj = {
+    key1: key1,
+  };
+  console.log(obj.key1); //hello_1
+</script> -->
+
+<!-- <script>
+  let obj = {
+    oracle: () => {
+      return "oracle connection soon";
+    },
+    mysql: () => {
+      return "mysql connection soon";
+    },
+    mongodb: () => {
+      return "mongodb connection soon";
+    },
+    couchDB: () => {
+      return "couchDB connection soon";
+    },
+  };
+  console.log(obj.oracle(), obj.mysql(), obj.mongodb(), obj.couchDB()); //oracle connection soon mysql connection soon mongodb connection soon couchDB connection soon
+
+</script> -->
+
+<!-- <script>
+  let obj = {
+    p_id: 111,
+  };
+  //Object is super object
+  //freeze
+  //read(yes)       write(no)       update(no)      delete(no)
+  Object.freeze(obj);
+  console.log(obj.p_id); // 111
+  obj.p_id = 222;
+
+  console.log(obj); //{p_id: 111}
+
+  obj.p_name = "p_one";
+
+  console.log(obj); //{p_id: 111}
+
+  delete obj.p_id;
+  console.log(obj); //{p_id: 111}
+</script> -->
