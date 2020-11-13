@@ -84,3 +84,44 @@
   delete obj.p_id;
   console.log(obj); //{p_id: 111}
 </script> -->
+
+<!-- <script>
+  let obj = {
+    p_id: 111,
+  };
+  //add another p_name:"p_one" //don't allow modifications
+
+  Object.defineProperty(obj, "p_name", { value: "p_one", writable: false });
+  console.log(obj); //{p_id: 111, p_name: "p_one"}
+  obj.p_id = "p_101";
+  console.log(obj); //{p_id: "p_101", p_name: "p_one"}
+  obj.p_name = "product_one";
+
+  console.log(obj); //{p_id: "p_101", p_name: "p_one"}
+
+  delete obj.p_id;
+
+  console.log(obj); //{p_name: "p_one"}
+
+  delete obj.p_name;
+  console.log(obj); //{p_name: "p_one"}
+</script> -->
+
+<script>
+  let obj = {
+    p_id: 111,
+  };
+  //add p_name
+  //add p_cost
+  //key p_id value 111
+  //only modifications possible
+  Object.defineProperties(obj, {
+    p_name: { value: "p_one", writable: false },
+    p_cost: { value: "10000", writable: false },
+  });
+  delete obj.p_id;
+  delete obj.p_name;
+  delete obj.p_cost;
+  console.log(obj); //{p_name: "p_one", p_cost: "10000"}
+  console.dir(obj);
+</script>

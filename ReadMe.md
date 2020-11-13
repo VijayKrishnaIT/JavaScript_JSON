@@ -1,3 +1,19 @@
+# Freeze
+
+read(yes) write(no) update(no) delete(no)
+
+# Object.defineProperty()
+
+don't allow modifications
+writable: false
+
+# Object.defineProperties()
+
+    add p_name
+    add p_cost
+    key p_id value 111
+    only modifications possible
+
 # JSON
 
 - JSON stands for Java Script Object Notation.
